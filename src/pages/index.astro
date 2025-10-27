@@ -1,0 +1,536 @@
+---
+import Layout from '../layouts/Layout.astro';
+import headshot from '../assets/headshot.jpg';
+import nflDriveAnalyzer from '../assets/nflDriveAnalyzer.jpg';
+import qbNegativePlaysAnalyzer from '../assets/qbNegativePlaysAnalyzer.jpg';
+import ffVorpTradeCalculator from '../assets/ffVorpTradeCalculator.jpg';
+import expectedManZone from '../assets/expectedManZone.jpeg';
+import expectedManZoneTable from '../assets/expectedManZoneTable.png';
+import purdueCampusBackground from '../assets/purdue_campus_background.jpg';
+---
+
+<Layout>
+	<div id="portfolio-container">
+		<!-- Hero Section -->
+		<section id="hero">
+			<div class="hero-content">
+				<div class="profile-section">
+					<div class="profile-image">
+						<img src={headshot.src} alt="Ethan Sterbis Professional Headshot" class="profile-photo" />
+					</div>
+					<div class="profile-info">
+						<h1>ETHAN STERBIS</h1>
+						<p class="subtitle">B.S. in Chemical Engineering, Data Science Concentration</p>
+						<p class="education">Purdue University, Class of 2025</p>
+						<p class="degree">Chemical Engineer | Data Scientist | Sports Analytics Enthusiast</p>
+						<div class="contact-links">
+							<a href="https://linkedin.com/in/ethansterbis" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+							<a href="mailto:egsterbi@purdue.edu">Email</a>
+							<a href="https://x.com/EthanSterbis" target="_blank" rel="noopener noreferrer">X</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about">
+			<div class="section-content">
+				<h2>About Me</h2>
+				<p>
+					I first got started with data science when I became involved in undergraduate computational chemistry research.
+					Sports data was the gateway to my learning of data science and ML principles which equipped me with the skills to contribute to research.
+					Sports analytics has remained my passion to this day, and I pride myself in bringing a unique perspective when dealing with all kinds of data thanks to my experience, background, and mentors.
+				</p>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects">
+			<div class="section-content">
+				<h2>Featured Projects</h2>
+				<div class="projects-grid">
+					<!-- Project 1: NFL Drive Analyzer -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src={nflDriveAnalyzer.src} alt="NFL Drive Analyzer Dashboard" />
+						</div>
+						<div class="project-content">
+							<h3>NFL Drive Analyzer</h3>
+							<p>
+								An interactive dashboard for analyzing NFL drive performance with comprehensive filtering options. 
+								Features drive outcomes, detailed statistics, and team comparisons across multiple seasons.
+							</p>
+							<div class="project-links">
+								<a href="https://ethansterbis.shinyapps.io/nflDriveAnalyzer/" target="_blank" rel="noopener noreferrer" class="demo-link">Site</a>
+								<a href="https://github.com/EthanSterbis/nflDriveAnalyzer" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 2: QB Negative Plays Analyzer -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src={qbNegativePlaysAnalyzer.src} alt="QB Negative Plays Analyzer Dashboard" />
+						</div>
+						<div class="project-content">
+							<h3>NFL QB Negative Plays Analyzer</h3>
+							<p>
+								A comprehensive tool for analyzing quarterback performance focusing on negative plays (sacks, interceptions, fumbles). 
+								Includes win probability analysis and dropback statistics across multiple seasons.
+							</p>
+							<div class="project-links">
+								<a href="https://ethansterbis.shinyapps.io/qbNegativePlaysAnalyzer/" target="_blank" rel="noopener noreferrer" class="demo-link">Site</a>
+								<a href="https://github.com/EthanSterbis/qbNegativePlaysAnalyzer" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 3: Fantasy Football VORP Trade Calculator -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src={ffVorpTradeCalculator.src} alt="Fantasy Football VORP Trade Calculator Dashboard" />
+						</div>
+						<div class="project-content">
+							<h3>NFL Fantasy Football VORP Trade Calculator</h3>
+							<p>
+								A Value Over Replacement Player (VORP) calculator for fantasy football trades. 
+								Helps users evaluate player values and make informed trading decisions with customizable league settings.
+							</p>
+							<div class="project-links">
+								<a href="https://ethansterbis.shinyapps.io/ffVorpTradeCalculator/" target="_blank" rel="noopener noreferrer" class="demo-link">Site</a>
+								<a href="https://github.com/EthanSterbis/ffVorpTradeCalculator" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Project 4: Expected Man Zone Model -->
+					<div class="project-card">
+						<div class="project-image">
+							<img src={expectedManZone.src} alt="Expected Man / Zone Plot" />
+						</div>
+						<div class="project-content">
+							<h3>NFL Man/Zone Coverage Prediction Model</h3>
+							<p>
+								XGBoost model for predicting when NFL defenses will play man / zone coverage.
+								Report and analysis on findings included.
+							</p>
+							<div class="project-links">
+								<a href="https://github.com/EthanSterbis/Expected-Man-Zone" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact">
+			<div class="section-content">
+				<h2>Contact Me</h2>
+				<div class="contact-buttons">
+					<a href="mailto:egsterbi@purdue.edu" class="contact-button primary">Email</a>
+					<a href="https://linkedin.com/in/ethansterbis" target="_blank" rel="noopener noreferrer" class="contact-button primary">LinkedIn</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	/* Global Styles */
+	* {
+		box-sizing: border-box;
+	}
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100vh;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		background: transparent;
+		color: #ffffff;
+		line-height: 1.6;
+		scroll-behavior: smooth;
+		position: relative;
+	}
+
+	html::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/purdue_campus_background.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		filter: blur(5px);
+		z-index: -2;
+	}
+
+	html::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(26, 26, 26, 0.8);
+		z-index: -1;
+	}
+
+	#portfolio-container {
+		min-height: 100vh;
+		position: relative;
+	}
+
+	/* Hero Section */
+	#hero {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
+		position: relative;
+	}
+
+	.hero-content {
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.profile-section {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.profile-image {
+		display: flex;
+		justify-content: center;
+	}
+
+	.profile-photo {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+		border: 4px solid rgba(255, 255, 255, 0.1);
+		transition: all 0.3s ease;
+	}
+
+	.profile-photo:hover {
+		transform: scale(1.05);
+		box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+	}
+
+	.profile-info h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin: 0 0 1rem 0;
+		background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		letter-spacing: 2px;
+	}
+
+	.subtitle {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: #ffffff;
+		margin: 0 0 0.5rem 0;
+		font-style: normal;
+	}
+
+	.education {
+		font-size: 1.2rem;
+		color: #ffffff;
+		margin: 0 0 0.5rem 0;
+		font-style: normal;
+	}
+
+	.degree {
+		font-size: 1rem;
+		color: #ffffff;
+		margin: 0 0 2rem 0;
+		font-style: normal;
+	}
+
+	.contact-links {
+		display: flex;
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.contact-links a {
+		color: white;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.contact-links a:hover {
+		background: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+		transform: translateY(-2px);
+	}
+
+	/* Section Styles */
+	section {
+		padding: 3rem 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.section-content {
+		width: 100%;
+	}
+
+	section h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin: 0 0 2rem 0;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	/* About Section */
+	#about {
+		background: #2a2a2a;
+		border-radius: 20px;
+		margin: 1rem auto;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	#about p {
+		font-size: 1.2rem;
+		line-height: 1.8;
+		color: #e0e0e0;
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	/* Projects Section */
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.project-card {
+		background: #2a2a2a;
+		border-radius: 20px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.project-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+		border-color: rgba(102, 126, 234, 0.3);
+	}
+
+	.project-image {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.project-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.project-card:hover .project-image img {
+		transform: scale(1.05);
+	}
+
+	.project-content {
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.project-content h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 0 0 1rem 0;
+		color: #ffffff;
+	}
+
+	.project-content p {
+		color: #c0c0c0;
+		line-height: 1.6;
+		margin: 0 0 1.5rem 0;
+		font-size: 1rem;
+		flex-grow: 1;
+	}
+
+	.project-links {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: auto;
+		justify-content: center;
+	}
+
+	.demo-link, .github-link {
+		padding: 0.75rem 1.5rem;
+		border-radius: 10px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		font-size: 0.9rem;
+	}
+
+	.demo-link {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.demo-link:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+	}
+
+	.github-link {
+		background: rgba(255, 255, 255, 0.1);
+		color: #ffffff;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.github-link:hover {
+		background: rgba(255, 255, 255, 0.2);
+		transform: translateY(-2px);
+	}
+
+	/* Contact Section */
+	#contact {
+		background: #2a2a2a;
+		border-radius: 20px;
+		margin: 1rem auto;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		text-align: center;
+		padding: 2rem;
+	}
+
+	#contact p {
+		font-size: 1.2rem;
+		color: #e0e0e0;
+		margin: 0 0 2rem 0;
+	}
+
+	.contact-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.contact-button {
+		padding: 1rem 2rem;
+		border-radius: 15px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		transition: all 0.3s ease;
+		min-width: 150px;
+		text-align: center;
+	}
+
+	.contact-button.primary {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.contact-button.primary:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+	}
+
+	.contact-button.secondary {
+		background: rgba(255, 255, 255, 0.1);
+		color: white;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.contact-button.secondary:hover {
+		background: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+		transform: translateY(-3px);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.profile-section {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			text-align: center;
+		}
+
+		.profile-info h1 {
+			font-size: 2.5rem;
+		}
+
+		.profile-photo {
+			width: 200px;
+			height: 200px;
+		}
+
+		.contact-links {
+			justify-content: center;
+		}
+
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+
+		section {
+			padding: 2rem 1rem;
+		}
+
+		.contact-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.contact-button {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.profile-info h1 {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1.2rem;
+		}
+
+		section h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
